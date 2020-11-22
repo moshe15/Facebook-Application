@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6E17FAD-E653-480F-A3D2-0A792EA34ADE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>C20_Ex03_Mor_316046093_Moshe_308459841</RootNamespace>
+    <AssemblyName>C20 Ex03 Mor 316046093 Moshe 308459841</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\..\..\Downloads\01_FB01_BasicFacebookFeatures.V6.8.0.18\01_FB01_BasicFacebookFeatures.V6.8.0.18\FBApi\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\..\..\..\..\OneDrive\שולחן העבודה\הרצאות למידת מוכנה\C20 Ex01 MorYemin 316046093 MosheDavila 308459841\V8.0.0.0\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSetings.cs" />
+    <Compile Include="FormFaceBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFaceBook.Designer.cs">
+      <DependentUpon>FormFaceBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormFaceBook.resx">
+      <DependentUpon>FormFaceBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="C20 Ex03 MorYemin 316046093 MosheDavila 308459841.docx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FacebookFeaturesLogic\FacebookFeaturesLogic.csproj">
+      <Project>{8d2ab4cb-630c-4c98-a7a9-a73f4dab567d}</Project>
+      <Name>FacebookFeaturesLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Aquarius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Aries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\backgroundhearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\backgroungMain2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\billGates.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\bruceLee.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Cancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Capricorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\davidBeckham.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\elvisPresley.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\gandhi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Gemini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ladyDiana.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Leo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Libra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Madonna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\marilynMonroe.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\oprahWinfrey.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pisces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Sagittarius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\sarahJessicaParker.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Scorpio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\seanConnery.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Taurus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Virgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\yitzhakRabin.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zodiacPic.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\facebookLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconFacebook.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Exercise Checking Report.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
